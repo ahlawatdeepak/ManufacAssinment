@@ -4,7 +4,12 @@ import { AllData } from "../Data";
 
 
 
+// initializes an empty object avgData to store the average values of MalicAcid for each distinct value of Alcohol in the AllData array.
 const avgData={}
+
+
+//  iterates through each element in the AllData array and updates the avgData object by calculating the total MalicAcid and the number of samples for each distinct value of Alcohol.
+
 
 for(let item of AllData){
 
@@ -26,6 +31,8 @@ for(let item of AllData){
 }
 
 
+// After calculating the average values of MalicAcid for each distinct value of Alcohol, creates an array malicAcid to store the calculated values, and an array alcohalData to store the distinct values of Alcohol.
+
 const malicAcid=[] 
 const alcohalData=[]
 for(let name in avgData){
@@ -39,36 +46,12 @@ for(let name in avgData){
 
 
 
-
-
-
-
-
-
-
-
-
-// const alcohalData=AllData.map((el)=>{
-//     return el.Alcohol
-//  })
-
-//  const malicAcid=AllData.map((el)=>{
-  
-//     // let total=0
-//     //   let i=0
-//     //   for(let key in el){
-//     //     total+=Number(el[key])
-//     //     i++
-//     //   }
-    
-//     // console.log(el,total,i)
-//     return (el.MalicAcid)
-//  })
-
 export const BarChart=()=>{
     
 
+// initializes an option object to configure the settings for a bar chart.
 
+//  The alcohalData and malicAcid arrays are used to populate the x-axis and y-axis data in the chart.
    var option = {
     title: {
         text: 'Alcohol and Malic Acid Data',
