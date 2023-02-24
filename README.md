@@ -2,6 +2,7 @@
    Deploy/Live link => https://preeminent-bavarois-5a7791.netlify.app/
    1. npm i to install all the dependencies 
    2. to run => yarn start / npm start 
+   3. to build => npm run build
    
    
 # Scatter Chart with  “Color Intensity” on the horizontal axis and “Hue” on the vertical axis. 
